@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
+#import "newPrincipalClass.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSBundle *bundle = [NSBundle bundleWithPath:@"/Applications/Utilities/Keychain Access.app/Contents/Resources/Keychain.menu"];
+        Class newPrincipalClass = [bundle principalClass];
+        id instance = [[newPrincipalClass alloc] init];
+        [instance _lockScreenMenuHit:NULL];
         
     }
     return 0;
