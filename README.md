@@ -36,4 +36,4 @@ Open System Preferences -> Keyboard -> Shortcuts
 
 Under Services -> General select your new service and assign a keyboard shortcut to it.
 
-*** Application shortcuts will override these shortcuts, so choose one that is unlikely to be used. ***
+**Application shortcuts will override these shortcuts, so choose one that is unlikely to be used.**
