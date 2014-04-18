@@ -8,9 +8,9 @@ Compile
 -------
 
 Use XCode or the following command from the same lockscreen subdirectory:
-'''sh
+```sh
 clang -framework Foundation main.m -o lockscreen
-'''
+```
 
 
 Setup Automator
